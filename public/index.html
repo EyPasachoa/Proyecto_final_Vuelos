@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestión de Vuelos</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Sistema de Gestión de Vuelos</h1>
+        
+        <!-- Login -->
+        <div id="login-section">
+            <h2>Iniciar Sesión</h2>
+            <form id="login-form">
+                <input type="email" id="email" placeholder="Email" required>
+                <input type="password" id="password" placeholder="Contraseña" required>
+                <button type="submit">Login</button>
+            </form>
+            <p id="login-error"></p>
+        </div>
+
+        <!-- Contenido Principal -->
+        <div id="main-content" style="display: none;">
+            <button id="logout-btn">Cerrar Sesión</button>
+            <p id="user-info"></p>
+            
+            <!-- Gestor -->
+            <div id="gestor-section" style="display: none;">
+                <h2>Reservas</h2>
+                <button id="btn-ver-reservas">Ver Mis Reservas</button>
+                <div id="reservas-list"></div>
+            </div>
+            
+            <!-- Administrador -->
+            <div id="admin-section" style="display: none;">
+                <h2>Administración</h2>
+                <h3>Usuarios</h3>
+                <button id="btn-list-users">Listar Usuarios</button>
+                <div id="users-list"></div>
+                
+                <h3>Vuelos</h3>
+                <button id="btn-list-flights">Listar Vuelos</button>
+                <div id="flights-list"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/app.js"></script>
+</body>
+</html>
